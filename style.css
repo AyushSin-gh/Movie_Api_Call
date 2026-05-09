@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* SEARCH BAR */
+
+#search_bar{
+    width: 100%;
+    padding: 20px;
+    background-color: #1c1c1c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+}
+
+#search_bar h1{
+    font-size: 35px;
+    color: #ffcc00;
+}
+
+#search_input{
+    width: 60%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+button{
+    padding: 10px 25px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: orange;
+    transform: scale(1.05);
+}
+
+/* SEARCH RESULTS */
+
+#search_results{
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* MOVIE CARDS */
+
+.movie_card{
+    background-color: #1f1f1f;
+    width: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.1);
+}
+
+.movie_card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+}
+
+.movie_card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.movie_card h3,
+.movie_card h4{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* SECTIONS */
+
+#first_section,
+#second_section,
+#third_section{
+    padding: 20px;
+}
+
+#first_section h1,
+#second_section h1,
+#third_section h1{
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+#crime_movies,
+#drama_movies,
+#action_movies{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+/* SCROLLBAR */
+
+#crime_movies::-webkit-scrollbar,
+#drama_movies::-webkit-scrollbar,
+#action_movies::-webkit-scrollbar{
+    height: 8px;
+}
+
+#crime_movies::-webkit-scrollbar-thumb,
+#drama_movies::-webkit-scrollbar-thumb,
+#action_movies::-webkit-scrollbar-thumb{
+    background-color: #ffcc00;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+
+#footer{
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: gray;
+}
+
+#my_movies_section{
+    padding: 20px;
+}
+
+#my_movies_section h1{
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+#movie_form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+    width: 400px;
+}
+
+#movie_form input,
+#movie_form textarea{
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+#movie_form textarea{
+    height: 100px;
+    resize: none;
+}
+
+#my_movies_container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#my_movies_container .movie_card{
+    width: 250px;
+}
+
+#my_movies_container .movie_card img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+#my_movies_container .movie_card p{
+    margin-top: 10px;
+    color: lightgray;
+    font-size: 14px;
+    line-height: 1.5;
+}

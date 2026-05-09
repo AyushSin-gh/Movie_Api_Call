@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search your movies</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="search_bar">
+        <h1>SEARCH WHAT YOU WANT</h1>
+        <input type="text" id="search_input" placeholder="SEARCH WHAT YOU LOVE">
+        <button onclick="search_movies()"> search </button> 
+    </div>
+    <div id="search_results">  search results </div>
+    <br>
+  <div id="first_section">
+  <h1>CRIME</h1> 
+  <div id="crime_movies"></div> <!-- Movie cards go here -->
+
+</div>
+
+<div id="second_section">
+  <h1>DRAMA</h1>
+  <div id="drama_movies"></div>
+</div>
+
+<div id="third_section">
+  <h1>ACTION</h1>
+  <div id="action_movies"></div>
+</div>
+
+<div id="my_movies_section">
+
+    <h1>My Movies</h1>
+
+    <div id="movie_form">
+
+        <input type="text" id="movie_name" placeholder="Enter movie name">
+
+        <textarea id="movie_description"
+            placeholder="Enter movie description"></textarea>
+
+        <button onclick="addCustomMovie()">
+            Add Movie
+        </button>
+
+    </div>
+
+    <div id="my_movies_container"></div>
+
+</div>
+  
+<div id="footer">
+    <p> All Right Reserved : Ayush Singh</p>
+</div>
+   <script src="script.js"></script>
+</body>
+</html>
